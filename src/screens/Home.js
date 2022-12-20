@@ -87,101 +87,269 @@ const Home = ({navigation}) => {
             style={{width: 20, height: 20}}
           />
         </View>
-        <View
-          style={{
-            flexDirection: 'row',
-            paddingHorizontal: 20,
-            width: '100%',
-            alignItems: 'center',
-          }}>
-          <View style={{width: '50%'}}>
-            <Text
-              style={{
-                fontWeight: '50%',
-                fontSize: 17,
-                color: '#585a61',
-              }}>
-              Recommended
-            </Text>
-            <View
-              style={{
-                height: 4,
-                backgroundColor: '#b1e5d3',
-                width: 115,
-                marginTop: -5,
-              }}></View>
-          </View>
-          <View
-            style={{
-              width: '50%',
-              alignItems: 'flex-end',
-            }}>
-            <View
-              style={{
-                backgroundColor: '#00a46c',
-                paddingHorizontal: 20,
-                paddingVertical: 5,
-                borderRadius: 15,
-              }}>
-              <Text
-                style={{
-                  fontWeight: 'bold',
-                  fontSize: 13,
-                  color: '#fff',
-                }}>
-                More
-              </Text>
-            </View>
-          </View>
-        </View>
-        <View
-          style={{
-            flexDirection: 'row',
-            paddingHorizontal: 20,
-            width: '100%',
-            alignItems: 'center',
-          }}>
-          <View style={{width: '50%'}}>
-            <Text
-              style={{
-                fontWeight: '50%',
-                fontSize: 17,
-                color: '#585a61',
-              }}>
-              Recommended
-            </Text>
-            <View
-              style={{
-                height: 4,
-                backgroundColor: '#b1e5d3',
-                width: 115,
-                marginTop: -5,
-              }}></View>
-          </View>
-          <View
-            style={{
-              width: '50%',
-              alignItems: 'flex-end',
-            }}>
-            <View
-              style={{
-                backgroundColor: '#00a46c',
-                paddingHorizontal: 20,
-                paddingVertical: 5,
-                borderRadius: 15,
-              }}>
-              <Text
-                style={{
-                  fontWeight: 'bold',
-                  fontSize: 13,
-                  color: '#fff',
-                }}>
-                More
-              </Text>
-            </View>
-          </View>
-        </View>
       </LinearGradient>
+      <View
+        style={{
+          flexDirection: 'row',
+          paddingHorizontal: 20,
+          width: '100%',
+          alignItems: 'center',
+        }}>
+        <View style={{width: '50%'}}>
+          <Text
+            style={{
+              fontWeight: '50%',
+              fontSize: 17,
+              color: '#585a61',
+            }}>
+            Recommended
+          </Text>
+          <View
+            style={{
+              height: 4,
+              backgroundColor: '#b1e5d3',
+              width: 115,
+              marginTop: -5,
+            }}></View>
+        </View>
+        <View
+          style={{
+            width: '50%',
+            alignItems: 'flex-end',
+          }}>
+          <View
+            style={{
+              backgroundColor: '#00a46c',
+              paddingHorizontal: 20,
+              paddingVertical: 5,
+              borderRadius: 15,
+            }}>
+            <Text
+              style={{
+                fontWeight: 'bold',
+                fontSize: 13,
+                color: '#fff',
+              }}>
+              More
+            </Text>
+          </View>
+        </View>
+      </View>
+
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={{height: 400}}>
+        <LinearGradient
+          colors={['rgba(0,164,109,0.09)', 'transparent']}
+          style={{
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            height: 100,
+            marginTop: 220,
+            top: 0,
+          }}
+        />
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Detail')}
+          style={{
+            height: 250,
+            elevation: 2,
+            backgroundColor: '#fff',
+            marginLeft: 20,
+            marginTop: 20,
+            borderRadius: 15,
+            marginBottom: 10,
+            width: 160,
+          }}>
+          <Image source={require('../images/4.png')} />
+          <View
+            style={{
+              flexDirection: 'row',
+              paddingTop: 10,
+              paddingHorizontal: 10,
+            }}>
+            <Text
+              style={{
+                fontWeight: 'bold',
+              }}>
+              SAMANTHA
+            </Text>
+            <Text
+              style={{
+                fontWeight: 'bold',
+                color: '#00a46c',
+                paddingLeft: 35,
+              }}>
+              400$
+            </Text>
+          </View>
+          <Text
+            style={{
+              paddingHorizontal: 10,
+              fontWeight: 'bold',
+              color: '#b1e5d3',
+              paddingTop: 3,
+            }}>
+            RUSSIA
+          </Text>
+        </TouchableOpacity>
+
+        <View
+          // onPress={() => navigation.navigate('Detail')}
+          style={{
+            height: 250,
+            elevation: 2,
+            backgroundColor: '#fff',
+            marginLeft: 20,
+            marginTop: 20,
+            borderRadius: 15,
+            marginBottom: 10,
+            width: 160,
+          }}>
+          <Image source={require('../images/5.png')} />
+          <View
+            style={{
+              flexDirection: 'row',
+              paddingTop: 10,
+              paddingHorizontal: 10,
+            }}>
+            <Text
+              style={{
+                fontWeight: 'bold',
+              }}>
+              ANGELICA
+            </Text>
+            <Text
+              style={{
+                fontWeight: 'bold',
+                color: '#00a46c',
+                paddingLeft: 45,
+              }}>
+              400$
+            </Text>
+          </View>
+          <Text
+            style={{
+              paddingHorizontal: 10,
+              fontWeight: 'bold',
+              color: '#b1e5d3',
+              paddingTop: 3,
+            }}>
+            RUSSIA
+          </Text>
+        </View>
+
+        <View
+          // onPress={() => navigation.navigate('Detail')}
+          style={{
+            height: 250,
+            elevation: 2,
+            backgroundColor: '#fff',
+            marginLeft: 20,
+            marginTop: 20,
+            borderRadius: 15,
+            marginBottom: 10,
+            width: 160,
+          }}>
+          <Image source={require('../images/6.png')} />
+          <View
+            style={{
+              flexDirection: 'row',
+              paddingTop: 10,
+              paddingHorizontal: 10,
+            }}>
+            <Text
+              style={{
+                fontWeight: 'bold',
+              }}>
+              SAMANTHA
+            </Text>
+            <Text
+              style={{
+                fontWeight: 'bold',
+                color: '#00a46c',
+                paddingLeft: 35,
+              }}>
+              400$
+            </Text>
+          </View>
+          <Text
+            style={{
+              paddingHorizontal: 10,
+              fontWeight: 'bold',
+              color: '#b1e5d3',
+              paddingTop: 3,
+            }}>
+            RUSSIA
+          </Text>
+        </View>
+      </ScrollView>
+
+      <View
+        style={{
+          flexDirection: 'row',
+          paddingHorizontal: 20,
+          width: '100%',
+          alignItems: 'center',
+          marginTop: -80,
+        }}>
+        <View style={{width: '50%'}}>
+          <Text
+            style={{
+              fontWeight: '50%',
+              fontSize: 17,
+              color: '#585a61',
+              marginTop: 30,
+            }}>
+            Featured Plants
+          </Text>
+          <View
+            style={{
+              height: 4,
+              backgroundColor: '#b1e5d3',
+              width: 115,
+              marginTop: -5,
+            }}></View>
+        </View>
+        <View
+          style={{
+            width: '50%',
+            alignItems: 'flex-end',
+          }}>
+          <View
+            style={{
+              backgroundColor: '#00a46c',
+              paddingHorizontal: 20,
+              paddingVertical: 5,
+              borderRadius: 15,
+              marginTop: 30,
+            }}>
+            <Text
+              style={{
+                fontWeight: 'bold',
+                fontSize: 13,
+                color: '#fff',
+              }}>
+              More
+            </Text>
+          </View>
+        </View>
+      </View>
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={{marginBottom: -100}}>
+        <Image
+          source={require('../images/18.png')}
+          style={{marginTop: 20, marginHorizontal: 20}}
+        />
+        <Image
+          source={require('../images/19.png')}
+          style={{marginTop: 20, borderRadius: 10}}
+        />
+      </ScrollView>
     </View>
   )
 }
